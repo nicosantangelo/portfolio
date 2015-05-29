@@ -19,7 +19,11 @@ html, body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+ul {
+    padding: 0;
 }
 
 .bg-gray {
@@ -75,6 +79,10 @@ body {
     font-size: 3.5em;
 }
 
+.wow {
+    visibility: hidden;
+}
+
 /*
 * Langy
 */
@@ -87,7 +95,7 @@ body {
     background-size: cover;
     -o-background-size: cover;
     color: #FFF;
-    font-family: 'Geometria';
+    font-family: "Geometria", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .langy h1 {
@@ -96,8 +104,7 @@ body {
 }
 
 .langy strong {
-    font-family: 'Helvetica', 'Arial';
-    font-weight: normal;
+    font-family: Helvetica, Arial;
 }
 
 .langy .button {
