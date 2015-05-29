@@ -1,0 +1,113 @@
+/*
+* Fonts
+*/
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("../fonts/Geometria-Light.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/*
+* Common
+*/
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.bg-gray {
+  background-color: #f5f5f5;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+.full-sized {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.separator {
+    border-color: #C7C7C7;
+    max-width: 200px;
+    margin: 20px auto;
+}
+
+.padded {
+    padding: 100px 20px;
+}
+
+.top-margened {
+    margin-top: 15px;
+}
+
+.project-logo {
+    vertical-align: -25px;
+}
+
+.project-title {
+    display: inline-block;
+    margin: 0;
+    line-height: 1.4;
+    font-size: 3.5em;
+}
+
+/*
+* Langy
+*/
+
+
+.langy {
+    background: url(../img/langy-bg.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: #FFF;
+    font-family: 'Geometria';
+}
+
+.langy h1 {
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    color: #FFF;
+}
+
+.langy strong {
+    font-family: 'Helvetica', 'Arial';
+    font-weight: normal;
+}
+
+.langy .button {
+    padding: 12px 40px;
+    font-size: 1.5em;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #518af5;
+    color: #FFF;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    opacity: .9;
+    transition: all .2s;
+}
