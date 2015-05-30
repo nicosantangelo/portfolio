@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'Geometria';
-  src: url("../fonts/Geometria-Light.otf");
+  src: url(../fonts/Geometria-Light.otf);
   font-weight: bold;
   font-style: normal;
 }
@@ -91,6 +91,7 @@ ul {
     transition: none !important;
 }
 
+
 /*
 * Langy
 */
@@ -137,6 +138,7 @@ ul {
  * Nav Bar
  *
  */
+
 .navbar-custom {
     transition: background-color 0.5s ease, padding 0.5s;
     -webkit-transition: background-color 0.5s ease, padding 0.5s;
@@ -192,4 +194,17 @@ ul {
     .nav > li > a {
         font-size: 18px;
     }
+}
+
+/*
+* Social icons
+*/
+
+.social-icon {
+    margin: 0 8px;
+}
+
+.stack-overflow-icon {
+    position: relative;
+    bottom: 3px;
 }
