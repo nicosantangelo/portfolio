@@ -19,7 +19,11 @@ html, body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+ul {
+    padding: 0;
 }
 
 .bg-gray {
@@ -39,6 +43,10 @@ body {
     font-weight: 700;
 }
 
+.full-height {
+    height: 100%;
+}
+
 .full-sized {
     display: table;
     position: relative;
@@ -53,7 +61,7 @@ body {
 }
 
 .padded {
-    padding: 100px 20px;
+    padding: 150px 20px;
 }
 
 .top-margened {
@@ -71,6 +79,18 @@ body {
     font-size: 3.5em;
 }
 
+.wow {
+    visibility: hidden;
+}
+
+.notransition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}
+
 /*
 * Langy
 */
@@ -83,7 +103,7 @@ body {
     background-size: cover;
     -o-background-size: cover;
     color: #FFF;
-    font-family: 'Geometria';
+    font-family: "Geometria", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .langy h1 {
@@ -92,8 +112,7 @@ body {
 }
 
 .langy strong {
-    font-family: 'Helvetica', 'Arial';
-    font-weight: normal;
+    font-family: Helvetica, Arial;
 }
 
 .langy .button {
@@ -110,4 +129,67 @@ body {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     opacity: .9;
     transition: all .2s;
+}
+
+
+/*
+ *
+ * Nav Bar
+ *
+ */
+.navbar-custom {
+    transition: background-color 0.5s ease, padding 0.5s;
+    -webkit-transition: background-color 0.5s ease, padding 0.5s;
+    -moz-transition: background-color 0.5s ease, padding 0.5s;
+    background-color: #333D47;
+    z-index: 120;
+}
+
+.navbar-fixed-top {
+  padding: 0;
+}
+
+.navbar-custom.navbar-expanded {
+    background-color: transparent;
+    border: none;
+    padding: 20px 0;
+}
+
+.navbar-custom li > a {
+    color: #FFF;
+    transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+}
+
+.navbar-expanded li > a {
+    color: transparent;
+}
+
+.nav > li > a {
+    font-family: Helvetica, Arial;
+    font-size: 15px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: transparent;
+    color: #B5D8FC;
+}
+
+.nav .active > a {
+    color: #B5D8FC;
+}
+
+.navbar-expanded .active > a {
+    color: #FFF;
+}
+
+@media (max-width: 768px) {
+    .navbar-custom .icon-bar {
+      background-color: #fff;
+    }
+
+    .nav > li > a {
+        font-size: 18px;
+    }
 }
