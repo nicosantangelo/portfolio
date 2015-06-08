@@ -28,4 +28,22 @@
             }
         }
     });
+
+    // Package downloads
+
+    $(".js-downloads-count").each(function() {
+        var roundToK = function(number) {
+            return Math.round(number / 1000);
+        };
+        var $self = $(this);
+        var packageName = $self.data('packageName');
+
+        $.ajax({
+          url: 'https://jsonp.afeld.me/?callback=?&url=https%3A%2F%2Fpackagecontrol.io%2Fpackages%2F' + packageName + '.json',
+          dataType: 'jsonp'
+        }).done(function(packageInfo) {
+            var totalDownloads = roundToK(packageInfo.installs.total);
+            $self.html('(' + totalDownloads + 'k downloads)').fadeIn();
+        });
+    });
 })();
