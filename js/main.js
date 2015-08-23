@@ -1,12 +1,16 @@
 (function() {
+    "use strict";
+    
+    // Keep the background image from resizing when the scrollbar on mobile moves
+    var windowHeight = $(window).height();
+    $("#top").height(windowHeight);
+    $("#langy").height(windowHeight);
+
     // Highlights the navigation menu items while scrolling.
     $('body').scrollspy({
         target: '.navbar-fixed-top',
         offset: 51
     });
-
-    // Keep the background image from resizing when the scrollbar on mobile moves
-    $("#top").height($(window).height());
 
     // Slider
     var $slider = $('.bxslider');
@@ -34,19 +38,24 @@
 
     // Package downloads
 
+    var packages = {}; // Pseudo set
     $(".js-downloads-count").each(function() {
+        var packageName = $(this).data('packageName');
+        packages[packageName] = 0;
+    });
+
+    $.each(packages, function(packageName, downloads) {
+        var $downloadCounters = $("[data-package-name='" + packageName + "']");
         var roundToK = function(number) {
             return Math.round(number / 1000);
         };
-        var $self = $(this);
-        var packageName = $self.data('packageName');
 
         $.ajax({
           url: 'https://jsonp.afeld.me/?callback=?&url=https%3A%2F%2Fpackagecontrol.io%2Fpackages%2F' + packageName + '.json',
           dataType: 'jsonp'
         }).done(function(packageInfo) {
             var totalDownloads = roundToK(packageInfo.installs.total);
-            $self.html('(' + totalDownloads + 'k downloads)').fadeIn();
+            $downloadCounters.html('(' + totalDownloads + 'k downloads)').fadeIn();
         });
     });
 })();
