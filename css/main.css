@@ -34,6 +34,8 @@ ul {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+    position: relative;
+    z-index: 10;
 }
 
 .text-vertical-center h1 {
@@ -91,6 +93,71 @@ ul {
     transition: none !important;
 }
 
+.header {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/bg.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.header h1, .header h3 {
+    color: #FFF;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.header .author-link {
+    color: #95CDD4;
+}
+
+.header h3 {
+    margin-top: 5px;
+}
+
+.header .code-link {
+    color: #ADD061;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.title-overlay {
+    height: 195px;
+    width: 477px;
+    background-color: #E3E3E3;
+    opacity: 0.2;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    border-radius: 40px;
+}
+
+@media (max-width: 768px) {
+    .title-overlay {
+        width: 327px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header .text-vertical-center {
+        bottom: 75px;
+    }
+    .title-overlay {
+        bottom: 140px;
+    }
+    .header h1 {
+        font-size: 6em;
+    }
+    .header h3 {
+        font-size: 1.4em;
+    }
+}
 
 /*
  *
