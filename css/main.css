@@ -70,29 +70,6 @@ ul {
     margin-top: 15px;
 }
 
-.project-logo {
-    vertical-align: -25px;
-}
-
-.project-title {
-    display: inline-block;
-    margin: 0;
-    line-height: 1.4;
-    font-size: 3.5em;
-}
-
-.wow {
-    visibility: hidden;
-}
-
-.notransition {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -o-transition: none !important;
-    -ms-transition: none !important;
-    transition: none !important;
-}
-
 .header {
   display: table;
   position: relative;
@@ -124,7 +101,7 @@ ul {
     text-shadow: 1px 1px 1px #000;
 }
 
-.title-overlay {
+.header .title-overlay {
     height: 195px;
     width: 477px;
     background-color: #E3E3E3;
@@ -139,22 +116,27 @@ ul {
     border-radius: 40px;
 }
 
-@media (max-width: 768px) {
-    .header {
-       background-position: 31%;
-    }
-    .title-overlay {
-        width: 327px;
-    }
+.project-logo {
+    vertical-align: -25px;
 }
 
-@media (min-width: 1200px) {
-    .header h1 {
-        font-size: 6em;
-    }
-    .header h3 {
-        font-size: 1.4em;
-    }
+.project-title {
+    display: inline-block;
+    margin: 0;
+    line-height: 1.4;
+    font-size: 3.5em;
+}
+
+.wow {
+    visibility: hidden;
+}
+
+.notransition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
 }
 
 /*
@@ -215,15 +197,6 @@ ul {
     color: #FFF;
 }
 
-@media (max-width: 768px) {
-    .navbar-custom .icon-bar {
-      background-color: #fff;
-    }
-
-    .nav > li > a {
-        font-size: 18px;
-    }
-}
 
 /*
  * Sublime
@@ -233,8 +206,10 @@ ul {
     font-size: 15px;
 }
 
-.about-content > h3 > small {
+.about-content .downloads {
     display: none;
+    font-size: 65%;
+    font-weight: normal;
 }
 
 
@@ -244,7 +219,9 @@ ul {
 
 
 .langy {
-    background: url(../img/langy-bg.jpg) no-repeat center center scroll;
+    background: url(../img/langy-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -300,9 +277,57 @@ ul {
     bottom: 3px;
 }
 
-@media(max-width: 768px) {
+
+/*
+* Media Queries
+*/
+
+@media (min-width: 1200px) {
+    /* Header, first section */
+    .header h1 {
+        font-size: 6em;
+    }
+    .header h3 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Navigation bar */
+    .navbar-custom .icon-bar {
+      background-color: #fff;
+    }
+    .nav > li > a {
+        font-size: 18px;
+    }
+
+    /* Header, first section */
+    .header {
+       background-position: 31%;
+    }
+    .header .title-overlay {
+        width: 327px;
+    }
+
+    /* Projects section */
+    #sublime .about-content br {
+        display: none;
+    }
+    #sublime .project-logo {
+        width: 60px;
+    }
+    #sublime .project-title {
+        font-size: 2.2em; 
+    }
+
+    .langy-row p {
+        font-size: 14px;
+    }
+
+    /* About section */
     .myself hr {
         margin-top: 15px;
         margin-bottom: 15px;
     }
 }
+
