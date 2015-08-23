@@ -163,6 +163,10 @@ ul {
     font-size: 15px;
 }
 
+.about-content > h3 > small {
+    display: none;
+}
+
 
 /*
 * Langy
@@ -174,7 +178,6 @@ ul {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
     color: #FFF;
     font-family: "Geometria", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
