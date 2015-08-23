@@ -19,7 +19,7 @@
             else {
                 if (!this.header.className.match(/\bnavbar\-expanded\b/)) {
                     this.header.className += ' navbar-expanded';
-                };
+                }
             }
             this.didScroll = false;
         },

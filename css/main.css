@@ -98,7 +98,8 @@ ul {
   position: relative;
   width: 100%;
   height: 100%;
-  background: url(../img/bg.jpg) no-repeat center center scroll;
+  background: url(../img/bg.jpg);
+  background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -139,18 +140,15 @@ ul {
 }
 
 @media (max-width: 768px) {
+    .header {
+       background-position: 31%;
+    }
     .title-overlay {
         width: 327px;
     }
 }
 
 @media (min-width: 1200px) {
-    .header .text-vertical-center {
-        bottom: 75px;
-    }
-    .title-overlay {
-        bottom: 140px;
-    }
     .header h1 {
         font-size: 6em;
     }
@@ -177,10 +175,15 @@ ul {
   padding: 0;
 }
 
+
 .navbar-custom.navbar-expanded {
     background-color: transparent;
     border: none;
     padding: 20px 0;
+}
+
+.navbar-expanded .navbar-toggle, .navbar-expanded .navbar-right {
+    display: none;
 }
 
 .navbar-custom li > a {

@@ -5,6 +5,9 @@
         offset: 51
     });
 
+    // Keep the background image from resizing when the scrollbar on mobile moves
+    $("#top").height($(window).height());
+
     // Slider
     var $slider = $('.bxslider');
     $slider.bxSlider({
