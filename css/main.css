@@ -276,6 +276,8 @@ ul {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     opacity: .9;
     transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
 }
 
 /*
@@ -293,4 +295,11 @@ ul {
 .stack-overflow-icon {
     position: relative;
     bottom: 3px;
+}
+
+@media(max-width: 768px) {
+    .myself hr {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 }
