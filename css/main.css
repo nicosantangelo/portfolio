@@ -125,17 +125,6 @@ ul {
     z-index: 10;
 }
 
-.project-logo {
-    vertical-align: -25px;
-}
-
-.project-title {
-    display: inline-block;
-    margin: 0;
-    line-height: 1.4;
-    font-size: 3.5em;
-}
-
 .wow {
     visibility: hidden;
 }
@@ -204,6 +193,27 @@ ul {
 
 .navbar-expanded .active > a {
     color: #FFF;
+}
+
+
+/*
+ * Projects
+ */
+
+ .project-logo {
+    vertical-align: -25px;
+}
+
+.project-title {
+    display: inline-block;
+    margin: 0;
+    line-height: 1.4;
+    font-size: 3.5em;
+}
+
+#projects .bxslider {
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
 }
 
 
