@@ -57,6 +57,11 @@ gulp.task('watch', function() {
   gulp.watch(paths.css, ['styles']);
 });
 
-gulp.task('build', ['scripts', 'headerScripts', 'images', 'styles']);
+gulp.task('fonts', ['clean'], function() {
+  return gulp.src('fonts/*')
+              .pipe(gulp.dest('dist/fonts'));
+});
+
+gulp.task('build', ['scripts', 'headerScripts', 'images', 'styles', 'fonts']);
 
 gulp.task('default', ['watch', 'build']);
