@@ -1,4 +1,4 @@
-(function() {
+setTimeout(function() {
     var $document = $(document);
     var konamiKeys = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
     var konamiIndex = 0;
@@ -20,4 +20,4 @@
             konamiIndex = 0;
         }
     });
-})();
+}, 0);
