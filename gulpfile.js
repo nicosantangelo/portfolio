@@ -2,9 +2,10 @@ var gulp = require('gulp');
 var addsrc = require('gulp-add-src');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
-var minifyCss = require('gulp-minify-css');
-var imagemin = require('gulp-imagemin');
+var minifyCss  = require('gulp-minify-css');
+var imagemin   = require('gulp-imagemin');
 var sourcemaps = require('gulp-sourcemaps');
+var rename     = require('gulp-rename')
 var del = require('del');
 
 var paths = {
@@ -19,10 +20,15 @@ gulp.task('clean', function() {
   return del(['dist']);
 });
 
+gulp.task('modernizr', ['clean'], function() {
+  return gulp.src('js/vendor/modernizr-2.8.3-respond-1.4.2.min.js')
+    .pipe(rename('modernizr-respond.js'))
+    .pipe(gulp.dest('dist/js'));
+});
+
 gulp.task('headerScripts', ['clean'], function() {
   return gulp.src('js/header.js')
       .pipe(uglify())
-      .pipe(addsrc.prepend('js/vendor/modernizr-2.8.3-respond-1.4.2.min.js'))
       .pipe(concat('header.min.js'))
     .pipe(gulp.dest('dist/js'));
 });
