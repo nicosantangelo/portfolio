@@ -38,7 +38,7 @@ ul {
     z-index: 10;
 }
 
-.text-vertical-center h1 {
+.text-vertical-center h2 {
     margin: 0;
     padding: 0;
     font-size: 4.5em;
@@ -83,7 +83,7 @@ ul {
   -o-background-size: cover;
 }
 
-.header h1, .header h3 {
+.header h2, .header h3 {
     color: #FFF;
     text-shadow: 1px 1px 1px #000;
 }
@@ -303,7 +303,7 @@ ul {
 
 @media (min-width: 1200px) {
     /* Header, first section */
-    .header h1 {
+    .header h2 {
         font-size: 6em;
     }
     .header h3 {
