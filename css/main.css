@@ -138,9 +138,7 @@ ul {
 }
 
 /*
- *
  * Nav Bar
- *
  */
 
 .navbar-custom {
@@ -241,9 +239,6 @@ ul {
     background: url(../img/langy-bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
     color: #FFF;
     font-family: "Geometria", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -263,7 +258,6 @@ ul {
 
 .langy .button {
     padding: 12px 40px;
-    font-size: 1.5em;
     display: inline-block;
     padding: 10px 30px;
     background: #518af5;
@@ -280,6 +274,50 @@ ul {
 }
 
 /*
+* Marcelosantangelo
+*/
+
+.marcelosantangelo {
+    background: url(../img/marcelosantangelo-bg.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+li.marcelosantangelo {
+    background-position: center;
+}
+
+.marcelosantangelo .project-logo-container {
+    padding: 10px;
+    background: #2A282B;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.marcelosantangelo .top-margened {
+    margin-top: 80px;
+}
+
+.marcelosantangelo .button {
+    padding: 12px 40px;
+    display: inline-block;
+    padding: 10px 30px;
+    border: 4px solid #D94F5C;
+    color: #D94F5C;
+    font-weight: 500;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.marcelosantangelo .button:hover {
+    border: 4px solid #A63C46;
+    color: #A63C46;
+}
+
+
+/*
 * About
 */
 
@@ -289,6 +327,10 @@ ul {
 
 .social-icon {
     margin: 0 8px;
+}
+
+.social-icon:hover {
+    text-decoration: none;
 }
 
 .stack-overflow-icon {
@@ -345,6 +387,14 @@ ul {
 
     .langy-row p {
         font-size: 14px;
+    }
+
+    .marcelosantangelo.padded {
+        padding: 150px 20px;
+    }
+
+    .marcelosantangelo .project-logo {
+        width: 310px;
     }
 
     /* About section */
