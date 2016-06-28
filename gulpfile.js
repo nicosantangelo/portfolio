@@ -58,9 +58,10 @@ gulp.task('images', ['clean'], function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(paths.js, ['scripts']);
-  gulp.watch(paths.images, ['images']);
-  gulp.watch(paths.css, ['styles']);
+  gulp.watch(
+    paths.js.concat(paths.css).concat(paths.images),
+    ['build']
+  )
 });
 
 gulp.task('fonts', ['clean'], function() {
