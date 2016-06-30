@@ -138,63 +138,6 @@ ul {
 }
 
 /*
- * Nav Bar
- */
-
-.navbar-custom {
-    transition: background-color 0.5s ease, padding 0.5s;
-    -webkit-transition: background-color 0.5s ease, padding 0.5s;
-    -moz-transition: background-color 0.5s ease, padding 0.5s;
-    background-color: #333D47;
-    z-index: 120;
-}
-
-.navbar-fixed-top {
-  padding: 0;
-}
-
-
-.navbar-custom.navbar-expanded {
-    background-color: transparent;
-    border: none;
-    padding: 20px 0;
-}
-
-.navbar-expanded .navbar-toggle, .navbar-expanded .navbar-right {
-    display: none;
-}
-
-.navbar-custom li > a {
-    color: #FFF;
-    transition: color 0.5s ease;
-    -webkit-transition: color 0.5s ease;
-    -moz-transition: color 0.5s ease;
-}
-
-.navbar-expanded li > a {
-    color: transparent;
-}
-
-.nav > li > a {
-    font-family: Helvetica, Arial;
-    font-size: 15px;
-}
-
-.nav > li > a:hover, .nav > li > a:focus {
-    background-color: transparent;
-    color: #B5D8FC;
-}
-
-.nav .active > a {
-    color: #B5D8FC;
-}
-
-.navbar-expanded .active > a {
-    color: #FFF;
-}
-
-
-/*
  * Projects
  */
 
@@ -354,14 +297,6 @@ li.marcelosantangelo {
 }
 
 @media (max-width: 768px) {
-    /* Navigation bar */
-    .navbar-custom .icon-bar {
-      background-color: #fff;
-    }
-    .nav > li > a {
-        font-size: 18px;
-    }
-
     /* Header, first section */
     .header {
        background-position: 31%;
