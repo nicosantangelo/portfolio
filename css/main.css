@@ -26,8 +26,12 @@ ul {
     padding: 0;
 }
 
+.bg-white {
+  background-color: #FFF;
+}
+
 .bg-gray {
-  background-color: #f5f5f5;
+  background-color: #F5F5F5;
 }
 
 .text-vertical-center {
@@ -172,6 +176,48 @@ ul {
     font-weight: normal;
 }
 
+
+/*
+ * nubisen
+ */
+
+.nubisen {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.nubisen.padded {
+    padding: 100px 130px;
+    padding-bottom: 0;
+}
+
+.nubisen .separator {
+    border-color: #6B9FA4;
+}
+
+.nubisen h1 {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.nubisen .colored {
+    color: #6B9FA4;
+}
+
+.nubisen h2 {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.nubisen p {
+    color: #AEAEAE;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.nubisen-icon {
+    color: #6B9FA4;
+    font-size: 40px;
+}
 
 /*
 * Langy
@@ -331,6 +377,19 @@ li.marcelosantangelo {
     .marcelosantangelo .project-logo {
         width: 310px;
     }
+
+    .nubisen.padded {
+        padding: 90px 20px;
+    }
+
+    .nubisen .project-logo {
+        width: 200px;
+    }
+
+    .nubisen p {
+        font-size: 12px;
+    }
+
 
     /* About section */
     .myself hr {
