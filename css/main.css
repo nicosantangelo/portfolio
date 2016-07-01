@@ -211,7 +211,10 @@ ul {
 .nubisen p {
     color: #AEAEAE;
     font-size: 13px;
-    margin-bottom: 20px;
+}
+
+.nubisen-explanations p {
+    margin-bottom: 25px;
 }
 
 .nubisen-icon {
