@@ -1,3 +1,3 @@
 # Portfolio site for Nicolás Santángelo
 
-https://github.com/NicoSantangelo/portfolio
+https://nicosantangelo.github.io/portfolio
