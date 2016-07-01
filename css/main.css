@@ -319,6 +319,8 @@ li.marcelosantangelo {
 
 .social-icon {
     margin: 0 8px;
+    font-size: 20px;
+    color: #000;
 }
 
 .social-icon:hover {
