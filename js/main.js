@@ -1,6 +1,6 @@
 (function() {
     "use strict";
-    
+
     // Keep the background image from resizing when the scrollbar on mobile moves
     var windowHeight = $(window).height();
     $("#top").height(windowHeight);
@@ -51,8 +51,8 @@
         };
 
         $.ajax({
-          url: 'https://jsonp.afeld.me/?callback=?&url=https%3A%2F%2Fpackagecontrol.io%2Fpackages%2F' + packageName + '.json',
-          dataType: 'jsonp'
+            url: 'https://jsonp.afeld.me/?callback=?&url=https%3A%2F%2Fpackagecontrol.io%2Fpackages%2F' + packageName + '.json',
+            dataType: 'jsonp'
         }).done(function(packageInfo) {
             var totalDownloads = roundToK(packageInfo.installs.total);
             $downloadCounters.html('(' + totalDownloads + 'k downloads)').fadeIn();
