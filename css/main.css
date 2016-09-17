@@ -55,7 +55,7 @@ header h1 {
     font-size: 3em;
     font-family: "Avenir Next", Lato, Sans-Serif;
     margin-top: 0;
-    margin-bottom: 17px;
+    margin-bottom: 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -87,10 +87,22 @@ section h3 {
 
 .box {
     margin-bottom: 20px;
-    padding: 12px 0 12px 8px;
+    padding: 12px 0 12px 36px;
     border-radius: 5px;
+    position: relative;
 
     display: block;
+}
+
+.box:before {
+    content: "{";
+    position: absolute;
+    left: 0px;
+    top: -10px;
+    font-size: 85px;
+    line-height: 1;
+    font-weight: 100;
+    color: #DDD
 }
 
 
@@ -117,11 +129,15 @@ section h3 {
 
 .sublime-text .box {
     min-height: 92px;
-    /*border-color: rgb(255, 165, 0);*/
+    padding-top: 16px;
 }
 
-.sublime-text .box:hover {
-    background-color: rgba(255, 165, 0, .2);
+.sublime-text .box:before {
+    font-size: 110px;
+}
+
+.sublime-text .box:hover:before {
+    color: rgba(255, 165, 0, .6);
 }
 
 .sublime-text [data-package-name] {
@@ -136,11 +152,10 @@ section h3 {
 }
 
 .chrome-extensions .box {
-    /*border-color: rgb(224, 75, 64);*/
 }
 
-.chrome-extensions .box:hover {
-    background-color: rgba(224, 75, 64, .2);
+.chrome-extensions .box:hover:before {
+    color: rgba(224, 75, 64, .6);
 }
 
 /* Projects */
@@ -150,11 +165,10 @@ section h3 {
 }
 
 .projects .box {
-    /*border-color: rgb(88, 126, 191);*/
 }
 
-.projects .box:hover {
-    background-color: rgba(88, 126, 191, .2);
+.projects .box:hover:before {
+    color: rgba(88, 126, 191, .6);
 }
 
 /* Profiles */
@@ -164,9 +178,12 @@ section h3 {
 }
 
 .profiles .box {
-    /*border-color: rgb(15, 169, 96);*/
 }
 
-.profiles .box:hover {
-    background-color: rgba(15, 169, 96, .2);
+.profiles .box:before {
+    font-size: 65px;
+}
+
+.profiles .box:hover:before {
+    color: rgba(15, 169, 96, .6);
 }
