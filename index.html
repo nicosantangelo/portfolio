@@ -22,11 +22,14 @@
     <![endif]-->
 
     <div class="main container-fluid">
-
       <header class="row">
-        <div class="col-xs-12">
-          <h1 class="title">Nicolás Santángelo</h1>
-          <h2 class="subtitle">Programmer</h2>
+        <div class="col-xs-10 col-sm-12">
+          <div id="logo" class="logo">
+            <a href="#profiles">
+              <h1>Nicolás Santángelo</h1>
+              <canvas id="logo-canvas" height="2px"></canvas>
+            </a>
+          </div>
         </div>
       </header>
       
@@ -36,21 +39,24 @@
 
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <a class="box" href="#">
-                <div class="title">Sublime gulp</div>
-                <div class="subtitle">Run gulp.js tasks from Sublime Text</div>
+              <a class="box" href="https://packagecontrol.io/packages/Gulp" target="_blank">
+                <div class="name">Sublime gulp</div>
+                <p data-package-name="Gulp"></p>
+                <div class="description">Run gulp.js tasks from Sublime Text</div>
               </a>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <a class="box" href="#">
-                <div class="title">Sublime Jasmine</div>
-                <div class="subtitle">jasmine.js integration for Sublime Text</div>
+              <a class="box" href="https://packagecontrol.io/packages/Jasmine%20JS" target="_blank">
+                <div class="name">Sublime Jasmine</div>
+                <p data-package-name="Jasmine JS"></p>
+                <div class="description">Jasmine.js integration for Sublime Text</div>
               </a>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <a class="box" href="#">
-                <div class="title">And more...</div>
-                <div class="subtitle">Package Control profile</div>
+              <a class="box" href="https://packagecontrol.io/browse/authors/NicoSantangelo" target="_blank">
+                <div class="name">And more...</div>
+                <p data-package-name="Total"></p>
+                <div class="description">Package Control profile</div>
               </a>
             </div>
           </div>
@@ -63,21 +69,21 @@
 
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <a class="box" href="#">
-                <div class="title">Github go to line</div>
-                <div class="subtitle">Go to line modal for GitHub</div>
+              <a class="box" href="https://chrome.google.com/webstore/detail/github-go-to-line-number/cbpdahjcomdapkaojlbhbbmopbmbecio" target="_blank">
+                <div class="name">Github go to line</div>
+                <div class="description">Go to line modal for GitHub</div>
               </a>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <a class="box" href="#">
-                <div class="title">GitHub with a cape</div>
-                <div class="subtitle">A bunch of useful additions to the GitHub UI</div>
+              <a class="box" href="https://chrome.google.com/webstore/detail/github-with-a-cape/ohkgmmldhbadfleajjafdeahmakbbcpi" target="_blank">
+                <div class="name">GitHub with a cape</div>
+                <div class="description">A bunch of useful additions to the GitHub UI</div>
               </a>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <a class="box" href="#">
-                <div class="title">ShareSafe</div>
-                <div class="subtitle">Share your current session securely</div>
+              <a class="box" href="https://chrome.google.com/webstore/detail/sharesafe/glifngepkcmfolnojchcfiinmjgeablm" target="_blank">
+                <div class="name">ShareSafe</div>
+                <div class="description">Share your current session securely</div>
               </a>
             </div>
           </div>
@@ -90,63 +96,67 @@
 
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <a class="box" href="#">
-                <div class="title">nubisen</div>
-                <div class="subtitle">Connect different kinds of sensors to the internet</div>
+              <a class="box" href="https://nubisen.com" target="_blank">
+                <div class="name">nubisen</div>
+                <div class="description">Connect different kinds of sensors to the internet</div>
               </a>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <a class="box" href="#">
-                <div class="title">Marcelo Santángelo photography</div>
-                <div class="subtitle">Personal website</div>
+              <a class="box" href="http://marcelosantangelo.com/" target="_blank">
+                <div class="name">Marcelo Santángelo photography</div>
+                <div class="description">Personal website</div>
               </a>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <a class="box" href="#">
-                <div class="title">Langy</div>
-                <div class="subtitle">Simple input source languages on OSX</div>
+              <a class="box" href="http://langyapp.github.io/" target="_blank">
+                <div class="name">Langy</div>
+                <div class="description">Simple input source languages on OSX</div>
               </a>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <a class="box" href="#">
-                <div class="title">Supermarket offers</div>
-                <div class="subtitle">Popular Argentine supermakets offers in one place</div>
+              <a class="box" href="https://nicosantangelo.github.io/weaintfoundshit.js/" target="_blank">
+                <div class="name">Weaintfoundshit.js</div>
+                <div class="description">Indispensable library for everyday development</div>
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <a class="box" href="https://nicosantangelo.github.io/ofertas-supermercados" target="_blank">
+                <div class="name">Supermarket offers</div>
+                <div class="description">Popular Argentine supermakets offers in one place</div>
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="row profiles">
+      <section id="profiles" class="row profiles">
         <div class="col-xs-12">
           <h3>Profiles</h3>
 
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <a class="box" href="#">
-                <div class="title">GitHub</div>
+              <a class="box" href="http://github.com/NicoSantangelo" target="_blank">
+                <div class="name">GitHub</div>
               </a>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <a class="box" href="#">
-                <div class="title">Stackoverflow</div>
+              <a class="box" href="https://stackoverflow.com/users/437049/nicosantangelo" target="_blank">
+                <div class="name">Stackoverflow</div>
               </a>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <a class="box" href="#">
-                <div class="title">Twitter</div>
+              <a class="box" href="https:/twitter.com/NicoSantangelo" target="_blank">
+                <div class="name">Twitter</div>
               </a>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <a class="box" href="#">
-                <div class="title">Email</div>
+              <a class="box" href="mailto:santangelonicolas+website@gmail.com" target="_blank">
+                <div class="name">Email</div>
               </a>
             </div>
           </div>
         </div>
       </section>
-
-      
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
