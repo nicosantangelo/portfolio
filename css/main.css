@@ -26,396 +26,123 @@ ul {
     padding: 0;
 }
 
-.bg-white {
-  background-color: #FFF;
+a {
+    color: #2B2B33;
 }
 
-.bg-gray {
-  background-color: #F5F5F5;
+a:hover {
+    color: #2B2B33;
+    text-decoration: none;
 }
 
-.text-vertical-center {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    position: relative;
-    z-index: 10;
+.main {
+    margin: 0 auto;
+    max-width: 100em;
+    padding: 5rem 6rem;
 }
 
-.text-vertical-center h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 4.5em;
-    font-weight: 700;
+/* Common */
+
+.subtitle {
+    color: rgba(0,0,0,0.6);
 }
 
-.bloc-logo {
-    width: 710px;
-    position: relative;
-    margin: auto;
+/* Header */
+
+header .title {
 }
 
-.bloc-logo canvas,
-.bloc-logo .logo-mask {
-    width: 710px;
-    height: 100px;
+header .subtitle {
+    margin-top: 12px;
+    font-weight: 400;
+}
+
+/* Section */
+
+section h3 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+/* Boxes */
+
+.box {
+    margin-bottom: 20px;
+    padding: 12px 0 12px 18px;
+    border-left: 2px solid #CCC;
+
     display: block;
 }
 
-.bloc-logo .logo-mask {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-size: 710px;
-    background-image: url("../img/logo-mask.png");
-    text-indent: -9999px;
-}
 
-.full-height {
-    height: 100%;
-}
-
-.full-sized {
-    display: table;
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.separator {
-    border-color: #C7C7C7;
-    max-width: 200px;
-    margin: 20px auto;
-}
-
-.padded {
-    padding: 150px 40px;
-}
-
-.top-margened {
-    margin-top: 15px;
-}
-
-.header {
-  display: table;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.header h1, .header h3 {
-    color: #FFF;
-    text-shadow: 1px 1px 1px #000;
-}
-
-.header .author-link {
-    color: #95CDD4;
-}
-
-.header h3 {
-    margin-top: 10px;
-}
-
-.header .code-link {
-    color: #ADD061;
-    text-shadow: 1px 1px 1px #000;
-}
-
-.header .title-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 10px;
-    margin: auto;
-    height: 195px;
-    width: 477px;
-    background-color: #E3E3E3;
-    opacity: 0.2;
-    border-radius: 40px;
-    z-index: 0;
-}
-
-.header .photo-credit {
-    position: absolute;
-    bottom: 3px;
-    right: 3px;
-    color: #FFF;
-    opacity: 0.7;
-    z-index: 10;
-}
-
-.wow {
-    visibility: hidden;
-}
-
-.notransition {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -o-transition: none !important;
-    -ms-transition: none !important;
-    transition: none !important;
-}
-
-/*
- * Projects
- */
-
- .project-logo {
-    vertical-align: -25px;
-}
-
-.project-title {
-    display: inline-block;
-    margin: 0;
-    line-height: 1.4;
-    font-size: 3.5em;
-}
-
-#projects .bxslider {
-    -webkit-perspective: 1000;
-    -webkit-backface-visibility: hidden;
-}
-
-
-/*
- * Sublime
- */
-
-.packages-row p {
-    font-size: 15px;
-}
-
-.about-content .downloads {
-    display: none;
-    font-size: 65%;
-    font-weight: normal;
-}
-
-
-/*
- * nubisen
- */
-
-.nubisen {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-}
-
-.nubisen.padded {
-    padding: 100px 130px;
-    padding-bottom: 0;
-}
-
-.nubisen .separator {
-    border-color: #6B9FA4;
-}
-
-.nubisen h1 {
-    font-size: 30px;
-    font-weight: 200;
-}
-
-.nubisen .colored {
-    color: #6B9FA4;
-}
-
-.nubisen h2 {
-    font-size: 18px;
-    margin-top: 5px;
-}
-
-.nubisen p {
-    color: #AEAEAE;
-    font-size: 13px;
-}
-
-.nubisen-explanations p {
-    margin-bottom: 25px;
-}
-
-.nubisen-icon {
-    color: #6B9FA4;
-    font-size: 40px;
-}
-
-/*
-* Langy
-*/
-
-
-.langy {
-    background: url(../img/langy-bg.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    color: #FFF;
-    font-family: "Geometria", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.langy h1 {
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-    color: #FFF;
-}
-
-.langy-row p {
-    font-size: 16px;
-}
-
-.langy strong {
-    font-family: Helvetica, Arial;
-}
-
-.langy .button {
-    padding: 12px 40px;
-    display: inline-block;
-    padding: 10px 30px;
-    background: #518af5;
-    color: #FFF;
-    font-size: 1.2em;
-    text-decoration: none;
-    border-radius: 4px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    opacity: .9;
-    transition: all .2s;
-    -webkit-transition: all .2s;
-    -moz-transition: all .2s;
-}
-
-/*
-* Marcelosantangelo
-*/
-
-.marcelosantangelo {
-    background: url(../img/marcelosantangelo-bg.jpg);
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-}
-
-li.marcelosantangelo {
-    background-position: center;
-}
-
-.marcelosantangelo .project-logo-container {
-    padding: 10px;
-    background: #2A282B;
-    border-radius: 4px;
-    display: inline-block;
-}
-
-.marcelosantangelo .top-margened {
-    margin-top: 80px;
-}
-
-.marcelosantangelo .button {
-    padding: 12px 40px;
-    display: inline-block;
-    padding: 10px 30px;
-    border: 4px solid #D94F5C;
-    color: #D94F5C;
-    font-weight: 500;
-    font-size: 1.2em;
-    text-decoration: none;
-}
-
-.marcelosantangelo .button:hover {
-    border: 4px solid #A63C46;
-    color: #A63C46;
-}
-
-
-/*
-* About
-*/
-
-.about-row p {
-    margin: 0 0 20px;
-}
-
-.social-icon {
-    margin: 0 8px;
+.box .title {
     font-size: 20px;
-    color: #000;
+    font-weight: 400;
 }
 
-.social-icon:hover {
-    text-decoration: none;
+.box .subtitle {
 }
 
-.stack-overflow-icon {
-    position: relative;
-    bottom: 3px;
-}
-
-
-/*
-* Media Queries
-*/
-
-@media (min-width: 1200px) {
-    /* Header, first section */
-    .header h1 {
-        font-size: 6em;
-    }
-    .header h3 {
-        font-size: 1.4em;
+@media screen and (max-width: 768px) {
+    .box {
+        margin-top: 10px;
     }
 }
 
-@media (max-width: 768px) {
-    /* Header, first section */
-    .header {
-       background-position: 31%;
-    }
-    .header .title-overlay {
-        width: 327px;
-    }
-    .header h3 {
-        margin-top: 5px;
-    }
+/* Sublime text */
 
-
-    /* Projects section */
-    #sublime .about-content br {
-        display: none;
-    }
-    #sublime .project-logo {
-        width: 60px;
-    }
-    #sublime .project-title {
-        font-size: 2.2em; 
-    }
-
-    .langy-row p {
-        font-size: 14px;
-    }
-
-    .marcelosantangelo.padded {
-        padding: 150px 20px;
-    }
-
-    .marcelosantangelo .project-logo {
-        width: 310px;
-    }
-
-    .nubisen.padded {
-        padding: 90px 20px;
-    }
-
-    .nubisen .project-logo {
-        width: 200px;
-    }
-
-    .nubisen p {
-        font-size: 12px;
-    }
-
-
-    /* About section */
-    .myself hr {
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
+.sublime-text h3 {
+    margin-top: 20px;
+    color: rgba(255, 165, 0, .8);
 }
 
+.sublime-text .box {
+    border-color: rgb(255, 165, 0);
+}
+
+.sublime-text .box:hover {
+    background-color: rgba(255, 165, 0, .2);
+}
+
+/* Chrome Extensions */
+
+.chrome-extensions h3 {
+    color: rgba(224, 75, 64, .8);
+}
+
+.chrome-extensions .box {
+    border-color: rgb(224, 75, 64);
+}
+
+.chrome-extensions .box:hover {
+    background-color: rgba(224, 75, 64, .2);
+}
+
+/* Projects */
+
+.projects h3 {
+    color: rgba(88, 126, 191, .8);
+}
+
+.projects .box {
+    border-color: rgb(88, 126, 191);
+}
+
+.projects .box:hover {
+    background-color: rgba(88, 126, 191, .2);
+}
+
+/* Profiles */
+
+.profiles h3 {
+    color: rgba(15, 169, 96, .8);
+}
+
+.profiles .box {
+    border-color: rgb(15, 169, 96);
+}
+
+.profiles .box:hover {
+    background-color: rgba(15, 169, 96, .2);
+}
