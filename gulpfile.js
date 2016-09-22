@@ -9,8 +9,7 @@ var rename     = require('gulp-rename')
 var del = require('del');
 
 var paths = {
-  js: ['js/*.js', '!js/header.js'],
-  vendorjs: ['js/vendor/*.js', '!js/vendor/jquery-1.11.2.min.js', '!js/vendor/modernizr-2.8.3-respond-1.4.2.min.js'],
+  js: ['js/*.js'],
   css: 'css/*.css',
   vendorcss: 'css/vendor/*.css',
   images: 'img/*'
@@ -37,7 +36,6 @@ gulp.task('scripts', ['clean'], function() {
   return gulp.src(paths.js)
       .pipe(sourcemaps.init())
         .pipe(uglify())
-        .pipe(addsrc.prepend(paths.vendorjs))
         .pipe(concat('all.min.js'))
       .pipe(sourcemaps.write())
     .pipe(gulp.dest('dist/js'));
