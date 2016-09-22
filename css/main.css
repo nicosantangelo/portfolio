@@ -55,7 +55,7 @@ header h1 {
     font-size: 3em;
     font-family: "Avenir Next", Lato, Sans-Serif;
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 @media screen and (max-width: 768px) {
@@ -73,8 +73,7 @@ section .row {
 }
 
 section h3 {
-    margin-top: 25px;
-    margin-bottom: 20px;
+    margin: 35px 0;
     padding: 10px;
     font-weight: 400;
     border-radius: 5px;
@@ -87,7 +86,7 @@ section h3 {
 
 .box {
     margin-bottom: 20px;
-    padding: 12px 0 12px 36px;
+    padding: 12px 0 22px 36px;
     border-radius: 5px;
     position: relative;
 
@@ -117,6 +116,7 @@ section h3 {
 @media screen and (max-width: 768px) {
     .box {
         margin-top: 10px;
+        padding-bottom: 12px;
     }
 }
 
