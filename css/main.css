@@ -166,6 +166,14 @@ section .row {
     flex-wrap: wrap;
 }
 
+section .row:before {
+    content: none;
+}
+
+section .row:after {
+    content: '';
+} 
+
 section h3 {
     margin-top: 25px;
     margin-bottom: 20px;
