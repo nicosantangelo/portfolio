@@ -33,12 +33,19 @@ gulp.task('headerScripts', ['clean'], function() {
 });
 
 gulp.task('scripts', ['clean'], function() {
-  return gulp.src(paths.js)
-      .pipe(sourcemaps.init())
-        .pipe(uglify())
-        .pipe(concat('all.min.js'))
-      .pipe(sourcemaps.write())
-    .pipe(gulp.dest('dist/js'));
+  if (process.env.SITE_ENV === 'development') {
+    return gulp.src(paths.js)
+        .pipe(sourcemaps.init())
+          .pipe(uglify())
+          .pipe(concat('all.min.js'))
+        .pipe(sourcemaps.write())
+      .pipe(gulp.dest('dist/js'));
+  } else {
+    return gulp.src(paths.js)
+      .pipe(uglify())
+      .pipe(concat('all.min.js'))
+      .pipe(gulp.dest('dist/js'));
+  }
 });
 
 gulp.task('styles', ['clean'], function() {
