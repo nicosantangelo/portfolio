@@ -50,10 +50,19 @@ a:hover {
     }
 }
 
-/* Common */
+.lead {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4em;
+}
+
+.text-muted {
+    color: #888888;
+}
 
 .description {
-    color: rgba(0 , 0 , 0 , 0.6);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 /* Header */
@@ -123,8 +132,8 @@ header .icons .icon:after {
     transition: transform 0.2s, opacity 0.2s;
     transform: scale(.8);
 
-    -webkit-box-sizing: content-box; 
-    -moz-box-sizing: content-box; 
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
     box-sizing: content-box;
 
     opacity: 0;
@@ -172,7 +181,7 @@ section .row:before {
 
 section .row:after {
     content: '';
-} 
+}
 
 section h3 {
     margin-top: 25px;
