@@ -213,6 +213,10 @@ section h3 {
 .box .description {
 }
 
+.box .downloads {
+    margin: 2px 0;
+}
+
 @media screen and (max-width: 768px) {
     .box {
         margin-top: 10px;
@@ -228,7 +232,6 @@ section h3 {
 
 .sublime-text .box {
     min-height: 92px;
-    /*border-color: rgb(255, 165, 0);*/
 }
 
 .sublime-text .box:hover {
@@ -237,17 +240,12 @@ section h3 {
 
 .sublime-text [data-package-name] {
     display: none;
-    margin: 2px 0;
 }
 
 /* Chrome Extensions */
 
 .chrome-extensions h3 {
     background-color: rgba(224, 75, 64, .8);
-}
-
-.chrome-extensions .box {
-    /*border-color: rgb(224, 75, 64);*/
 }
 
 .chrome-extensions .box:hover {
@@ -260,10 +258,16 @@ section h3 {
     background-color: rgba(88, 126, 191, .8);
 }
 
-.projects .box {
-    /*border-color: rgb(88, 126, 191);*/
-}
-
 .projects .box:hover {
     background-color: rgba(88, 126, 191, .2);
+}
+
+/* Websites */
+
+.websites h3 {
+    background-color: rgba(88, 191, 91, 0.8);
+}
+
+.websites .box:hover {
+    background-color: rgba(88, 191, 91, .2);
 }
