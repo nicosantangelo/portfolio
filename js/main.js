@@ -25,8 +25,8 @@
             },
             dataType: 'jsonp',
         }).done(function(data) {
-            var results = data.query && data.query.results
-            console.log(packageName, results)
+            var results = data.query && data.query.results;
+
             if (results) {
                 var installs = results.json.installs
                 var $downloadCounters = $("[data-package-name='" + packageName + "']");
