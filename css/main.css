@@ -101,6 +101,7 @@ header .icons .icon:last-child {
 @media screen and (max-width: 768px) {
     header .icons {
         text-align: left;
+        padding-left: 3px;
     }
 
     header .icons .icon {
