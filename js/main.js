@@ -18,7 +18,7 @@
         var query = 'SELECT * FROM json WHERE url="' + url + '"';
 
         var promise = $.ajax({
-            url: 'http://query.yahooapis.com/v1/public/yql?q=' + query,
+            url: 'https://query.yahooapis.com/v1/public/yql?q=' + query,
             data: {
                 format: 'json',
                 jsonCompat: 'new',
