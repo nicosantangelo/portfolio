@@ -12,7 +12,6 @@
         $el.fadeIn();
     }
 
-
     $.each(packages, function(index, packageName) {
         var url = 'https%3A%2F%2Fpackagecontrol.io%2Fpackages%2F' + encodeURIComponent(encodeURIComponent(packageName)) + '.json';
         var query = 'SELECT * FROM json WHERE url="' + url + '"';
@@ -41,4 +40,8 @@
     $.when.apply($, promises).done(function() {
         addDownloads($("[data-package-name='Total']"), total);
     });
+
+    if (location.search.search('n=1')) {
+        document.getElementById('js-website-message').className = ''
+    }
 })();
