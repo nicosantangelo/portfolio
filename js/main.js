@@ -41,7 +41,7 @@
         addDownloads($("[data-package-name='Total']"), total);
     });
 
-    if (location.search.search('n=1')) {
+    if (location.search.search('n=1') !== -1) {
         document.getElementById('js-website-message').className = ''
     }
 })();
