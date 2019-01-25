@@ -13,21 +13,18 @@
     }
 
     $.each(packages, function(index, packageName) {
-        var url = 'https%3A%2F%2Fpackagecontrol.io%2Fpackages%2F' + encodeURIComponent(encodeURIComponent(packageName)) + '.json';
-        var query = 'SELECT * FROM json WHERE url="' + url + '"';
+        var packageUrl = 'https%3A%2F%2Fpackagecontrol.io%2Fpackages%2F' + encodeURIComponent(encodeURIComponent(packageName)) + '.json';
+        var url =  "https://simple-cors.herokuapp.com/?url=" + packageUrl
 
         var promise = $.ajax({
-            url: 'https://query.yahooapis.com/v1/public/yql?q=' + query,
+            url: url,
             data: {
                 format: 'json',
                 jsonCompat: 'new',
-            },
-            dataType: 'jsonp',
+            }
         }).done(function(data) {
-            var results = data.query && data.query.results;
-
-            if (results) {
-                var installs = results.json.installs
+            if (data) {
+                var installs = data.installs
                 var $downloadCounters = $("[data-package-name='" + packageName + "']");
                 addDownloads($downloadCounters, installs.total);
                 total += installs.total;
