@@ -67,6 +67,16 @@ a:hover {
     color: rgba(0, 0, 0, 0.6);
 }
 
+@media screen and (max-width: 768px) {
+    .lead {
+        margin-bottom: 5px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+}
+
 /* Header */
 
 header h1 {
@@ -76,6 +86,7 @@ header h1 {
     margin-bottom: 17px;
     font-weight: 500;
     line-height: 1.1;
+    word-break: break-word;
 }
 
 header .icons {
@@ -102,15 +113,14 @@ header .icons .icon:last-child {
 
 @media screen and (max-width: 768px) {
     header .icons {
-        text-align: left;
+        text-align: center;
         padding-left: 3px;
     }
 
     header .icons .icon {
-        margin: 5px 20px;
-    }
-    header .icons .icon:first-child {
-        margin-left: 0;
+        width: 50%;
+        margin: 20px 0;
+        float: left;
     }
 }
 
