@@ -1,4 +1,10 @@
-.blogList li::marker {
+.blogs {
+  margin: 6rem auto 1rem;
+  max-width: 48rem;
+  padding: 0.25rem;
+}
+
+.list li::marker {
   color: var(--h2-color);
 }
 

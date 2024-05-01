@@ -1,12 +1,15 @@
-:root {
-  --markdown-strong-color: var(--h2-color);
-
-  --markdown-code-background-color: #dce0e41a;
-  --markdown-pre-border-color: #999;
+.markdown {
+  background: var(--body-background-color);
+  min-height: 100%;
+  color: var(--body-color);
+  line-height: 1.45;
+  margin: 6rem auto 1rem;
+  max-width: 48rem;
+  padding: 0.25rem 0.25rem 3rem;
 }
 
-pre,
-code {
+.markdown pre,
+.markdown code {
   background-color: var(--markdown-code-background-color);
   font-family: Menlo, Monaco, "Courier New", monospace;
   font-size: 85%;
@@ -18,8 +21,84 @@ code {
   border-radius: 5px;
 }
 
-pre > code {
+.markdown pre > code {
   background-color: transparent;
+}
+
+.markdown p {
+  margin-bottom: 1.3rem;
+}
+
+.markdown-heading {
+  margin: 1.414rem 0 0.5rem;
+  font-weight: inherit;
+  line-height: 1.42;
+}
+
+.markdown h1 > .anchored-title:before {
+  left: calc(var(--h1-font-size) * -1);
+}
+
+.markdown h2 > .anchored-title:before {
+  left: calc(var(--h2-font-size) * -1);
+}
+
+.markdown h3 > .anchored-title:before {
+  left: calc(var(--h3-font-size) * -1);
+}
+
+.markdown h4 > .anchored-title:before {
+  left: calc(var(--h4-font-size) * -1);
+}
+
+.markdown h5 > .anchored-title:before {
+  left: calc(var(--h5-font-size) * -1);
+}
+
+.markdown h6 > .anchored-title:before {
+  left: calc(var(--markdown-h5-color) * -1);
+}
+
+.markdown small {
+  font-size: 0.707em;
+}
+
+.markdown img,
+.markdown video {
+  max-width: 100%;
+}
+
+.markdown blockquote {
+  border-left: 3px solid var(--anchor-color);
+  padding-left: 1rem;
+}
+
+.markdown strong {
+  color: var(--markdown-strong-color);
+}
+
+.anchored,
+.anchored:visited,
+.anchored:hover {
+  position: relative;
+  color: inherit;
+}
+
+.anchored-title:hover:before {
+  content: "#";
+  position: absolute;
+}
+
+@media screen and (max-width: 990px) {
+  .anchored-title:hover:before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .markdown {
+    margin: 5rem 1.3rem 1rem;
+  }
 }
 
 @media print {
@@ -79,116 +158,5 @@ pre > code {
   h2,
   h3 {
     page-break-after: avoid;
-  }
-}
-
-body {
-  line-height: 1.85;
-}
-
-p {
-  margin-bottom: 1.3rem;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  margin: 1.414rem 0 0.5rem;
-  font-weight: inherit;
-  line-height: 1.42;
-}
-
-h1 > .anchored-title:before {
-  left: calc(var(--h1-font-size) * -1);
-}
-
-h2 > .anchored-title:before {
-  left: calc(var(--h2-font-size) * -1);
-}
-
-h3 > .anchored-title:before {
-  left: calc(var(--h3-font-size) * -1);
-}
-
-h4 > .anchored-title:before {
-  left: calc(var(--h4-font-size) * -1);
-}
-
-h5 > .anchored-title:before {
-  left: calc(var(--h5-font-size) * -1);
-}
-
-h6 > .anchored-title:before {
-  left: calc(var(--markdown-h5-color) * -1);
-}
-
-small {
-  font-size: 0.707em;
-}
-
-/* https://github.com/mrmrs/fluidity */
-
-img,
-canvas,
-iframe,
-video,
-svg,
-select,
-textarea {
-  max-width: 100%;
-}
-
-html,
-body {
-  background: var(--body-background-color);
-  min-height: 100%;
-}
-
-body {
-  color: var(--body-color);
-  line-height: 1.45;
-  margin: 6rem auto 1rem;
-  max-width: 48rem;
-  padding: 0.25rem;
-}
-
-blockquote {
-  border-left: 3px solid var(--anchor-color);
-  padding-left: 1rem;
-}
-
-strong {
-  color: var(--markdown-strong-color);
-}
-
-/* END */
-
-.markdown {
-  font-family: var(--font-mono);
-  padding-bottom: 3rem;
-}
-
-.anchored,
-.anchored:visited,
-.anchored:hover {
-  position: relative;
-  color: inherit;
-}
-
-.anchored-title:hover:before {
-  content: "#";
-  position: absolute;
-}
-
-@media screen and (max-width: 990px) {
-  .anchored-title:hover:before {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 930px) {
-  body {
-    margin: 5rem 1.3rem 1rem;
   }
 }

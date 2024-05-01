@@ -5,7 +5,7 @@
 }
 
 .navigation li {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .navigation li::marker {
@@ -16,6 +16,6 @@
   .navigation {
     position: absolute;
     display: flex;
-    gap: 20px;
+    gap: 30px;
   }
 }

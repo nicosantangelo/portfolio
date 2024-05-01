@@ -24,6 +24,11 @@
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+
+  --markdown-strong-color: var(--h2-color);
+
+  --markdown-code-background-color: #dce0e41a;
+  --markdown-pre-border-color: #999;
 }
 
 * {
@@ -34,6 +39,7 @@ html,
 body {
   height: 100%;
   max-width: 100vw;
+  font-family: var(--font-mono);
 }
 
 html {

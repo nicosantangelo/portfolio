@@ -16,13 +16,13 @@ export function processHeadings({ prefix = "" } = {}): MarkedExtension {
       heading(text: string, level: number, raw: string) {
         const id = slugify(prefix, raw);
 
-        return `<h${level} id="${id}">
+        return `<h${level} id="${id}" class="markdown-heading">
 	<a class="anchored anchored-title" href="#${id}">${text}</a>
 </h${level}>\n`;
       },
       strong(text) {
         const id = slugify(prefix, text);
-        return `<strong id="${id}">
+        return `<strong id="${id}" class="markdown-strong">
 	<a class="anchored" href="#${id}">${text}</a>
 </strong>\n`;
       },
