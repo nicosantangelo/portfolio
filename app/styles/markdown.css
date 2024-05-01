@@ -1,5 +1,5 @@
 :root {
-  --markdown-strong-color: var(--markdown-h2-color);
+  --markdown-strong-color: var(--h2-color);
 
   --markdown-code-background-color: #dce0e41a;
   --markdown-pre-border-color: #999;
@@ -164,15 +164,9 @@ strong {
 
 /* END */
 
-@media screen and (max-width: 930px) {
-  body {
-    margin: 5rem 1.3rem 1rem;
-  }
-}
-
 .markdown {
   font-family: var(--font-mono);
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
 .anchored,
@@ -185,4 +179,16 @@ strong {
 .anchored-title:hover:before {
   content: "#";
   position: absolute;
+}
+
+@media screen and (max-width: 990px) {
+  .anchored-title:hover:before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  body {
+    margin: 5rem 1.3rem 1rem;
+  }
 }
