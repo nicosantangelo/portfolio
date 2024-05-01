@@ -14,6 +14,7 @@ The following might be opinionated.
   - [Window and App management](#window-and-app-management)
   - [System Preferences / System Settings](#system-preferences--system-settings)
   - [Useful Keyboard shortcuts](#useful-keyboard-shortcuts)
+  - [Finder / File Management](#finder--file-management)
 - [Intermediate](#intermediate)
   - [Installing keyboard layouts](#installing-keyboard-layouts)
 - [Pro](#pro)
@@ -104,6 +105,16 @@ Useful settings at the OS level. If you don't know how to open the settings on y
 - 🎹 **Global (useful) shortcuts**: There are a few global(ish) keyboard shortcuts you can use on any app on macOS, but I find myself using two the most:
   - `⌘ + shift + /` (or `⌘ + ?`): immensely useful, it searches on the menu actions of an app for whatever you need and points at it. You can learn to use any app without having a clue how it actually works. Want to crop something on Preview? search for Crop. Need to do something on Photoshop? search vaguely for it and see what it comes up. Etc
   - `⌘ + ,`: Open Preferences.
+
+#### Finder / File management
+
+- **Folders in finder**: When you open a folder in Finder you'll see the name at the top of the window. If you hover over it, the folder icon will appear next to it, from there you can:
+  - If you click it you can drag it elsewhere
+  - If you secondary click it (two fingers) you'll see the path leading to it
+- 🎹 **Files**: Navigating files using the keyboard can be a bit unintuitive, mostly if you come from Windows (tell me how to open a file with your keyboard without looking ahead, I dare you!):
+  - _Open a file_: `⌘ + ↓`
+  - _Rename_: `enter`
+  - _Preview_: `spacebar`
 
 ### Intermediate
 
