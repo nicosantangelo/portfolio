@@ -1,0 +1,11 @@
+.blogList li::marker {
+  color: var(--h2-color);
+}
+
+.date {
+  color: var(--gray);
+}
+
+.name {
+  font-size: 20px;
+}
