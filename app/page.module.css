@@ -1,0 +1,66 @@
+.main {
+  height: 100%;
+  padding: 0 1.5rem;
+}
+
+.mainCard {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title,
+.subTitle {
+  color: white;
+}
+
+.title .colored {
+  color: var(--h1-color);
+}
+
+.subTitle .colored {
+  color: var(--h3-color);
+}
+
+.title {
+  margin-bottom: 15px;
+  font-size: 50px;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title small {
+  margin-top: 4px;
+  margin-left: 15px;
+  font-size: 20px;
+  color: var(--gray);
+}
+
+.subTitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.links {
+  text-align: right;
+  font-size: 80%;
+}
+
+.link {
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .handle {
+    display: none;
+  }
+
+  .link {
+    font-size: 15px;
+  }
+}

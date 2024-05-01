@@ -1,0 +1,21 @@
+.navigation {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+}
+
+.navigation li {
+  margin-bottom: 6px;
+}
+
+.navigation li::marker {
+  color: var(--h4-color);
+}
+
+@media screen and (max-width: 800px) {
+  .navigation {
+    position: absolute;
+    display: flex;
+    gap: 20px;
+  }
+}

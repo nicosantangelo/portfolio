@@ -1,0 +1,15 @@
+.title {
+  font-weight: 500;
+}
+
+.list {
+  padding: 0 16px;
+}
+
+.list li {
+  margin: 20px 0;
+}
+
+.list li::marker {
+  color: var(--h3-color);
+}
