@@ -2,6 +2,7 @@ import Link from "next/link";
 import Centered from "../components/Centered";
 import { locations } from "../helpers/locations";
 import styles from "./page.module.css";
+import { BLOG_SLUGS } from "../helpers/blogNames";
 
 export default function Links() {
   return (
@@ -24,7 +25,7 @@ export default function Links() {
           </li>
           <li>
             <Link
-              href={locations.blog("macos-configuration")}
+              href={locations.blog(BLOG_SLUGS.slice(-1)[0])}
               className={styles.blogLink}
             >
               Last blog post
