@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { locations } from "../helpers/locations";
 import styles from "./page.module.css";
 
@@ -7,7 +8,9 @@ export default function BlogList() {
       <li>
         <div className={styles.date}>2024-04-30</div>
         <div className={styles.name}>
-          <a href={locations.blog("macos-configuration")}>Supercharge macos</a>
+          <Link href={locations.blog("macos-configuration")}>
+            Supercharge macos
+          </Link>
         </div>
       </li>
     </ul>

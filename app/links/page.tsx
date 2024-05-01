@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Centered from "../components/Centered";
 import { locations } from "../helpers/locations";
 import styles from "./page.module.css";
@@ -9,25 +10,25 @@ export default function Links() {
         <h5 className={styles.title}>Some stuff to checkout</h5>
         <ul className={styles.list}>
           <li>
-            <a href="https://github.com/nicosantangelo?tab=repositories&q=extension&type=&language=&sort=">
+            <Link href="https://github.com/nicosantangelo?tab=repositories&q=extension&type=&language=&sort=">
               Chrome extensions
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="https://packagecontrol.io/browse/authors/nicosantangelo">
+            <Link href="https://packagecontrol.io/browse/authors/nicosantangelo">
               Sublime text packages
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="http://langyapp.github.io/">Other projects</a>
+            <Link href="http://langyapp.github.io/">Other projects</Link>
           </li>
           <li>
-            <a
+            <Link
               href={locations.blog("macos-configuration")}
               className={styles.blogLink}
             >
               Last blog post
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

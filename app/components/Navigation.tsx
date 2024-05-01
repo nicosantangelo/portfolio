@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 
 import { locations } from "../helpers/locations";
 import styles from "./navigation.module.css";
+import Link from "next/link";
 
 export default function Navigation() {
   const currentLocation = usePathname();
@@ -11,17 +12,17 @@ export default function Navigation() {
     <ul className={styles.navigation}>
       {currentLocation === locations.home() ? null : (
         <li>
-          <a href={locations.home()}>Home</a>
+          <Link href={locations.home()}>Home</Link>
         </li>
       )}
       {currentLocation === locations.blog() ? null : (
         <li>
-          <a href={locations.blog()}>Blog</a>
+          <Link href={locations.blog()}>Blog</Link>
         </li>
       )}
       {currentLocation === locations.links() ? null : (
         <li>
-          <a href={locations.links()}>Links</a>
+          <Link href={locations.links()}>Links</Link>
         </li>
       )}
     </ul>
