@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Centered from "../components/Centered";
 import { locations } from "../helpers/locations";
-import styles from "./page.module.css";
 import { BLOG_SLUGS } from "../helpers/blogNames";
+import styles from "./page.module.css";
 
 export default function Links() {
   return (
