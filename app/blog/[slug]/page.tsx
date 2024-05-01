@@ -1,16 +1,16 @@
 import fs from "fs/promises";
 import Markdown from "@/app/components/Markdown";
-import Navigation from "@/app/components/Navigation";
+import { BLOG_NAMES, Slugs } from "@/app/helpers/blogNames";
 
 const PATH_TO_POSTS = "./app/blog/[slug]/posts";
 
 type Props = {
-  params: { slug: string };
+  params: { slug: Slugs };
 };
 
 export async function generateMetadata({ params }: Props) {
   return {
-    title: params.slug,
+    title: BLOG_NAMES[params.slug],
   };
 }
 

@@ -9,6 +9,7 @@
 }
 
 .date {
+  margin-bottom: 4px;
   color: var(--gray);
 }
 

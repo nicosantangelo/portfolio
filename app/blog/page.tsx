@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { locations } from "../helpers/locations";
 import styles from "./page.module.css";
+import { BLOG_NAMES, BLOG_SLUGS } from "../helpers/blogNames";
 
 export default function BlogList() {
   return (
@@ -9,9 +10,9 @@ export default function BlogList() {
         <li>
           <div className={styles.date}>2024-04-30</div>
           <div className={styles.name}>
-            <Link href={locations.blog("macos-configuration")}>
-              Supercharge macos
-            </Link>
+            {BLOG_SLUGS.map((slug) => (
+              <Link href={locations.blog(slug)}>{BLOG_NAMES[slug]}</Link>
+            ))}
           </div>
         </li>
       </ul>
