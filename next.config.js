@@ -4,8 +4,6 @@
 const nextConfig = {
   output: "export",
 
-  distDir: "dist",
-
   // Necessary to use <Image /> and output: 'export' at the same time
   images: { unoptimized: true },
 
