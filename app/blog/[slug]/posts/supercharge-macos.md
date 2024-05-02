@@ -1,11 +1,10 @@
 # Supercharge MacOS
 
-The following guide attempts to act as guide for configuring your macOS for productivity and all-round ease of use. It's also a living document, as I update how I like to setup my own computer.
+The following can be used as a guide or just a sprinkle of tips for configuring your macOS for productivity and all-round ease of use. It's also a living document, as I update how I like to setup my own box.
 
-It's divided in sections so you can read what you want for your use-case. You probably don't want to implement everything you see here, but I'd look at all sections cause you'll probably find at least one thing you find useful or you didn't know.
-Remembering new shortcuts can be a pain (or fun, depending on who you are) but I'd advice you to keep at it at least for a week! then you can ascertain if it's useful or not.
+It's divided in sections so you can read what you want for your use-case. You probably don't want to implement everything you see here, but I'd take a look around cause you'll probably find at least one thing you find useful or you didn't know.
 
-The following might be opinionated.
+Remembering new shortcuts can be a pain (or fun, depending on who you are) but I'd advice you to keep at it at least for a week! then you can ascertain if it's useful or not...or really get into sunken cost fallacy.
 
 ## Index
 
