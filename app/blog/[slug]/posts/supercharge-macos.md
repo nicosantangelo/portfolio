@@ -201,7 +201,7 @@ You can configure it with the button below the checkbox that conveniently reads 
 
 `System Settings > General > AirDrop & Handoff > AirPlay Receiver`
 
-- **zsh**: A Unix shell with features backed in. I use [ohmyzsh](https://ohmyz.sh/) to install it and configure it and I advice you do too, at least for the color scheme. A few aliases and plugins I use:
+- **zsh**: A Unix shell with features baked in. I use [ohmyzsh](https://ohmyz.sh/) to install it and configure it and I advice you do too, at least for the color scheme. A few aliases and plugins I use:
   - Git aliases (edit your `~/.zshrc`):
     - `alias gcm='git checkout master || git checkout main'`
     - `alias gpc='git push origin $(current_branch)'`
