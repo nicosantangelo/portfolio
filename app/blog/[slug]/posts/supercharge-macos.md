@@ -172,14 +172,20 @@ Log out of your session or restart, and after that keeping `⌘ + ^ + trackpad c
 - **Keyboard modifications**: [Karabiner](https://karabiner-elements.pqrs.org/) is like a swiss army knife to make your keyboard usable only for you and annoy everyone else that tries. but also its incredible for productivity and ergonomics. I have:
 
 _Simple modifications_
-_. `caps_lock -> escape`: because shift is already there and you rarely have to scream that much when typing.
-_. `right_command -> right_control`: your right thumb is right there (get it?). Makes things like `^ + 1` easier and more ergonomic.
+
+◦ `caps_lock -> escape`: because shift is already there and you rarely have to scream that much when typing.
+
+◦ `right_command -> right_control`: your right thumb is right there (get it?). Makes things like `^ + 1` easier and more ergonomic.
 
 _Complex modifications_
+
 Very [VIM](https://www.vim.org/) oriented. I do recommend the first and second one if you changed the right command to right control in simple modifications. You can find them [here](https://ke-complex-modifications.pqrs.org)
-_. `Use right_control+h/l to switch tabs in an application`
-_. `Use right_control+j/k to switch windows of the foreground application`
-\*. `Change fn+hjkl to arrow keys`
+
+◦ `Use right_control+h/l to switch tabs in an application`
+
+◦ `Use right_control+j/k to switch windows of the foreground application`
+
+◦ `Change fn+hjkl to arrow keys`
 
 - **Automatic Input sources**: If you don't want (or can't) use a [keyboard layout](#keyboard-layouts) like `U.S. Internation without dead keys`, I wrote [Langy](https://langyapp.github.io/) a long time ago to fix this. It automatically changes the input source depending on which app is in focus.
 
