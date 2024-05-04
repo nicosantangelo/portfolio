@@ -56,6 +56,10 @@
 }
 
 @media screen and (max-width: 800px) {
+  .title {
+    display: block;
+  }
+
   .handle {
     display: none;
   }
