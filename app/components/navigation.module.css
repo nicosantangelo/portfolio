@@ -8,7 +8,14 @@
   margin-bottom: 8px;
 }
 
+.navigation li:hover {
+}
+
 .navigation li::marker {
+  color: var(--h1-color);
+}
+
+.navigation.selected li::marker {
   color: var(--h4-color);
 }
 
