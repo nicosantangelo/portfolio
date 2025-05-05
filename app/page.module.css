@@ -10,9 +10,13 @@
   align-items: center;
 }
 
+.header {
+  word-spacing: -0.15rem;
+}
+
 .title,
 .subTitle {
-  color: white;
+  color: var(--body-color);
 }
 
 .title .colored {
@@ -24,7 +28,7 @@
 }
 
 .title {
-  margin-bottom: 15px;
+  margin-bottom: 0.25em;
   font-size: 50px;
   font-weight: 400;
   display: inline-flex;
@@ -32,16 +36,14 @@
   justify-content: center;
 }
 
-.title small {
-  margin-top: 4px;
-  margin-left: 15px;
-  font-size: 20px;
-  color: var(--gray);
+.title .handle {
+  color: #3a3847;
+  display: none;
 }
 
 .subTitle {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0.5em;
   font-size: 28px;
   font-weight: 300;
 }
