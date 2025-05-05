@@ -1,14 +1,20 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import Centered from "../components/Centered";
 import { locations } from "../helpers/locations";
 import { BLOG_SLUGS } from "../helpers/blogNames";
 import styles from "./page.module.css";
 
-export default function Links() {
+export const metadata: Metadata = {
+  title: "projects | nicosantangelo",
+  description: "Projects that I've worked on",
+};
+
+export default function Projects() {
   return (
     <Centered>
       <div>
-        <h5 className={styles.title}>Some stuff to checkout</h5>
+        <h5 className={styles.title}>Stuff to checkout</h5>
         <ul className={styles.list}>
           <li>
             <Link href="https://github.com/nicosantangelo?tab=repositories&q=extension&type=&language=&sort=">

@@ -4,7 +4,7 @@ import Navigation from "./components/Navigation";
 import "./styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "Nicolas Santangelo",
+  title: "nicosantangelo",
   description:
     "This is the personal website of Nicolás Santángelo (nicosantangelo), a programmer and all-round curious lad",
 };
