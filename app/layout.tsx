@@ -4,9 +4,9 @@ import Navigation from "./components/Navigation";
 import "./styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "Nicolas Santangelo (nicosantangelo)",
+  title: "Nicolas Santangelo",
   description:
-    "This is the personal website of Nicolás Santángelo, a programmer and all-round curious lad",
+    "This is the personal website of Nicolás Santángelo (nicosantangelo), a programmer and all-round curious lad",
 };
 
 export default function RootLayout({
