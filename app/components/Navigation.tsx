@@ -1,10 +1,10 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 import { locations } from "../helpers/locations";
 import styles from "./navigation.module.css";
-import Link from "next/link";
 
 export default function Navigation() {
   const currentLocation = usePathname();
