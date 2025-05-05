@@ -6,7 +6,7 @@ export const locations = {
     const baseUrl = "/blog";
     return baseUrl + (name ? `/${name}` : "");
   },
-  links() {
-    return "/links";
+  projects() {
+    return "/projects";
   },
 };

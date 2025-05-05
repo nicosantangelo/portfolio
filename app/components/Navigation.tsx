@@ -8,17 +8,18 @@ import styles from "./navigation.module.css";
 
 export default function Navigation() {
   const currentLocation = usePathname();
+
+  const isHome = currentLocation === locations.home();
+
+  if (isHome) {
+    return null;
+  }
+
   return (
     <ul className={styles.navigation}>
-      {currentLocation === locations.home() ? (
-        <li className={styles.selected}>
-          <span>Home</span>
-        </li>
-      ) : (
-        <li>
-          <Link href={locations.home()}>Home</Link>
-        </li>
-      )}
+      <li>
+        <Link href={locations.home()}>Home</Link>
+      </li>
       {currentLocation.includes(locations.blog()) ? (
         <li className={styles.selected}>
           <span>Blog</span>
@@ -28,13 +29,13 @@ export default function Navigation() {
           <Link href={locations.blog()}>Blog</Link>
         </li>
       )}
-      {currentLocation === locations.links() ? (
+      {currentLocation === locations.projects() ? (
         <li className={styles.selected}>
-          <span>Links</span>
+          <span>Projects</span>
         </li>
       ) : (
         <li>
-          <Link href={locations.links()}>Links</Link>
+          <Link href={locations.projects()}>Projects</Link>
         </li>
       )}
     </ul>
