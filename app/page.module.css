@@ -21,11 +21,14 @@
 }
 
 .title .colored {
-  color: var(--h1-color);
+  background: linear-gradient(90deg, var(--h1-color), var(--h3-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .subTitle .colored {
-  color: var(--h3-color);
+  /*color: var(--h3-color);*/
 }
 
 .title {
@@ -46,6 +49,7 @@
   margin: 0.3em 0 0.4em 0;
   font-size: 28px;
   font-weight: 300;
+  font-family: var(--font-mono);
 }
 
 .links {
