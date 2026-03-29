@@ -57,7 +57,7 @@
 .links {
   display: flex;
   margin-top: 1.5em;
-  gap: 15px;
+  gap: 1em;
   justify-content: flex-end;
 }
 
@@ -116,6 +116,7 @@
 @media screen and (max-width: 600px) {
   .subTitle {
     margin-bottom: 1em;
+    line-height: 1.5em;
   }
 }
 
