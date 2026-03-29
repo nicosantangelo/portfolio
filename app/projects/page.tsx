@@ -14,7 +14,7 @@ export default function Projects() {
   return (
     <Centered>
       <div>
-        <h5 className={styles.title}>Stuff to checkout</h5>
+        <h5 className={styles.title}>Things I've wrote</h5>
         <ul className={styles.list}>
           <li>
             <Link href="https://github.com/nicosantangelo?tab=repositories&q=extension&type=&language=&sort=">

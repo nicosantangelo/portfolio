@@ -12,5 +12,5 @@
 }
 
 .list li::marker {
-  color: var(--h3-color);
+  color: var(--h5-color);
 }

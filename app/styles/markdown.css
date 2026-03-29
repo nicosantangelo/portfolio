@@ -1,4 +1,5 @@
 .markdown {
+  font-family: var(--font-family);
   background: var(--body-background-color);
   min-height: 100%;
   color: var(--body-color);
@@ -23,10 +24,6 @@
 
 .markdown pre > code {
   background-color: transparent;
-}
-
-.markdown p {
-  /*margin-bottom: 1.5rem;*/
 }
 
 .markdown-heading {

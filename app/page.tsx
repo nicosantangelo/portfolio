@@ -1,7 +1,6 @@
 "use client";
 
 import Centered from "./components/Centered";
-import KeyboardIcon from "./components/KeyboardIcon";
 import { locations } from "./helpers/locations";
 import styles from "./page.module.css";
 
@@ -16,10 +15,12 @@ export default function Home() {
             <span className={styles.handle}>santangelo</span>
           </span>
         </h1>
-        <h3 className={styles.subTitle}>
-          Software&nbsp;<span className={styles.colored1}>developer</span> and
-          all-round <span className={styles.colored3}>curious</span> lad
-        </h3>
+
+        <h2 className={styles.subTitle}>
+          Software&nbsp;<span className={styles.colored}>developer</span> and
+          all-round <span className={styles.colored}>curious</span> lad
+        </h2>
+
         <div className={styles.links}>
           <a className={styles.link} href={locations.blog()}>
             blog
