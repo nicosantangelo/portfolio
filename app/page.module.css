@@ -49,7 +49,6 @@
 }
 
 .subTitle {
-  /*margin: 0.3em 0 0.4em 0;*/
   margin: 0.4em 0 0.4em 0;
   font-size: 28px;
   font-weight: 300;
@@ -111,5 +110,17 @@
 
   .link {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .subTitle {
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .subTitle {
+    font-size: 24px;
   }
 }
