@@ -1,0 +1,47 @@
+---
+const pathname = Astro.url.pathname;
+const isHome = pathname === '/';
+const isBlog = pathname.startsWith('/blog');
+const isProjects = pathname === '/projects' || pathname === '/projects/';
+---
+
+{!isHome && (
+  <ul class="navigation">
+    <li><a href="/">Home</a></li>
+    {isBlog ? (
+      <li class="selected"><span>Blog</span></li>
+    ) : (
+      <li><a href="/blog">Blog</a></li>
+    )}
+    {isProjects ? (
+      <li class="selected"><span>Projects</span></li>
+    ) : (
+      <li><a href="/projects">Projects</a></li>
+    )}
+  </ul>
+)}
+
+<style>
+  .navigation {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 1.125em;
+  }
+
+  .navigation li {
+    margin-bottom: 8px;
+  }
+
+  .navigation li::marker {
+    color: var(--h3-color);
+  }
+
+  @media screen and (max-width: 1100px) {
+    .navigation {
+      position: absolute;
+      display: flex;
+      gap: 2em;
+    }
+  }
+</style>

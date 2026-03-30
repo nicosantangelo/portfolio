@@ -1,3 +1,8 @@
+---
+title: "Supercharge macOS"
+date: 2024-04-30
+---
+
 # Supercharge MacOS
 
 The following can be used as a guide or just a sprinkle of tips for configuring your macOS for productivity and all-round ease of use. It's also a living document, as I update how I like to setup my own box.
@@ -175,12 +180,12 @@ An _even better_ layout is `U.S. International without dead keys` which sadly do
 
 **Installing keyboard layouts**
 
-1. In Finder, choose `Go` from the menu at the top of your screen. With that drop-down menu open, hold down the `⌥ key.` This will make the `Library` show up in the list. Click `Library`.
-2. In the new Finder window, scroll down to find `Keyboard layouts`.
-3. Drag the keyboard layout you saved earlier into the `Keyboard layouts` list.
-4. Open `System Settings -> Keyboard -> Input Sources`
-   - Click the `+` (plus) sign at the bottom left to ‘add a keyboard layout’.
-   - Select `Others` in the left-side pane, this should display a list of keyboard layouts which includes the one you just added
+1. In Finder, choose `Go` from the menu at the top of your screen. With that drop-down menu open, hold down the `⌥ key.` This will make the `Library` show up in the list. Click `Library`.
+2. In the new Finder window, scroll down to find `Keyboard layouts`.
+3. Drag the keyboard layout you saved earlier into the `Keyboard layouts` list.
+4. Open `System Settings -> Keyboard -> Input Sources`
+   - Click the `+` (plus) sign at the bottom left to 'add a keyboard layout'.
+   - Select `Others` in the left-side pane, this should display a list of keyboard layouts which includes the one you just added
 5. To access the key layout, click on the flag at the top of your screen. Select the keyboard layout from the list. or follow the instructions above to do it via a keyboard shortcuts
 6. Pat yourself in the back and curse Craig Federighi
 
