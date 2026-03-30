@@ -1,5 +1,3 @@
-"use client";
-
 import Centered from "./components/Centered";
 import { locations } from "./helpers/locations";
 import styles from "./page.module.css";
