@@ -17,8 +17,9 @@ export default function Home() {
         </h1>
 
         <h2 className={styles.subTitle}>
-          Software&nbsp;<span className={styles.colored}>developer</span> and
-          all-round <span className={styles.colored}>curious</span> lad
+          Software&nbsp;<span className={styles.underlineBrush}>developer</span>{" "}
+          and all-round <span className={styles.underlineWavy}>curious</span>{" "}
+          lad
         </h2>
 
         <div className={styles.links}>
