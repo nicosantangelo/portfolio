@@ -33,7 +33,6 @@ Visual language
 - [Developer](#Developer)
 - [Glossary](#glossary)
 
-
 ## Beginner
 
 ### Window and App management
@@ -41,15 +40,17 @@ Visual language
 <img src="/laptop-icon.svg" width="20" height="20" style="display:inline;vertical-align:middle" alt="application" /> **App launcher**
 
 Opening apps can be done in different ways, but the only correct one is using an app launcher, also caller app finder. By default app has [Spotlight](https://support.apple.com/guide/mac-help/search-with-spotlight-mchlp1008/mac) which is serviceable but not great. I recommend [Raycast](https://www.raycast.com/). Follow this simple tutorial to [Replace Spotlight with Raycast](https://www.raycast.com/help/hotkey). Some things you can do with it (some work with Spotlight, other don't)
+
 - Math: use it as a calculator. Raycast also supports modifiers like `1M - 100k`
- - Find files
- - Search for something on a Search Engine (Google/DuckDuckGo/etc)
- - Clipboard History (Raycast): Have a list of your last copied text. If you go to `Settings -> Extensions -> Search for Clipboard History` you can set a Hotkey. I use `⌥ + ⌘ + v`. You can also disable it for certain apps.
- - Etc
+- Find files
+- Search for something on a Search Engine (Google/DuckDuckGo/etc)
+- Clipboard History (Raycast): Have a list of your last copied text. If you go to `Settings -> Extensions -> Search for Clipboard History` you can set a Hotkey. I use `⌥ + ⌘ + v`. You can also disable it for certain apps.
+- Etc
 
 <img src="/keyboard-icon.svg" width="20" height="20" style="display:inline;vertical-align:middle" alt="keyboard shortcut" /> **Change between apps**
 
 `⌘ + tab`. Keeping `⌘` pressed keeps the list open, you can then move right pressing `tab` or `right arrow` and left pressing `shift + tab` or arrow left . You can press `⌘ + q` to close applications from there instead of opening them.
+
 - Similar to using Mission control with the trackpad, by default swiping up with four fingers, but often way faster (now more than ever with dark mode everywhere)
 
 <br/>
@@ -57,11 +58,13 @@ Opening apps can be done in different ways, but the only correct one is using an
 <img src="/keyboard-icon.svg" width="20" height="20" style="display:inline;vertical-align:middle" alt="keyboard shortcut" /> **Cycle between windows of the same app**
 
 `` ⌘ + ` ``, if you want to cycle in the opposite direction press ``⌘ + shift + ` ``
+
 - Similar to using App Exposé with the trackpad, by default swipping down with three fingers, but way faster
 
 <img src="/laptop-icon.svg" width="20" height="20" style="display:inline;vertical-align:middle" alt="application" /> **Move and resize Windows**
 
 The [Rectangle](https://rectangleapp.com/) app allows you to snap windows to half the screen and maximize them by dragging them to the top of the screen. All features can be triggered via configurable keyboard shortcuts a few are:
+
 - `⌃ + ⌥ + arrow keys (←↑↓→)`: Resize window to occupy half the space in the direction used
 - `⌃ + ⌥ + enter key (↵)`: Maximize window
 
@@ -72,6 +75,7 @@ Another option is to use [Raycast](http://localhost:3000/blog/supercharge-macos#
 **Hot corners**
 
 Hot corners gives you the option to do something when you place your cursor on a specific corner of the screen. I use two corners:
+
 - Bottom right: Desktop. Very useful if you need to grab something from the desktop to an app quickly
 - Top Left: Lock Screen
 
@@ -88,7 +92,7 @@ Useful settings at the OS level. If you don't know how to open the settings on y
 <img src="/keyboard-icon.svg" width="20" height="20" style="display:inline;vertical-align:middle" alt="keyboard shortcut" /> **Navigate and dismiss dialogs**
 
 By default, if a dialog pops up prompting something like `Are you sure? [CANCEL] [ACCEPT]` you have to use the trackpad/mouse to click an option.
-  If you want to use the keyboard to do this (like any sane person should) toggle the `Keyboard Navigation` option in:
+If you want to use the keyboard to do this (like any sane person should) toggle the `Keyboard Navigation` option in:
 
 `System Settings -> Keyboard -> Keyboard Navigation`
 
@@ -119,11 +123,13 @@ Not much to say here, but I encourage you to check the Trackpad settings macOS g
 If you ever need to take a screen shot press
 
 `⌘ + shift + `
+
 - `3`: Take a screenshot of the entire screen. Save it on the desktop by default
 - `4`: Select a part of the screen using the pointer and take a screenshot. Save it on the desktop by default
 - `5`: The recording and screenshot menu bar will appear below. You can select what you want to do (like taking a video) and where to save files. If you start recording, the stop button will appear on the menu bar above.
 
 `⌘ + ⌃ + shift + `
+
 - `3`: Take a screenshot of the entire screen. Save it on the clipboard and paste it somewhere else.
 - `4`: Select a part of the screen using the pointer and take a screenshot. Save it on the clipboard and paste it somewhere else.
 
@@ -132,6 +138,7 @@ If you ever need to take a screen shot press
 <img src="/keyboard-icon.svg" width="20" height="20" style="display:inline;vertical-align:middle" alt="keyboard shortcut" /> **Global (useful) shortcuts**
 
 There are a few global(ish) keyboard shortcuts you can use on any app on macOS, but I find myself using two the most:
+
 - `⌘ + shift + /` (or `⌘ + ?`): immensely useful, it searches on the menu actions of an app for whatever you need and points at it. You can learn to use any app without having a clue how it actually works. Want to crop something on Preview? search for Crop. Need to do something on Photoshop? search vaguely for it and see what it comes up. Etc
 - `⌘ + ,`: Open Preferences.
 
@@ -140,14 +147,16 @@ There are a few global(ish) keyboard shortcuts you can use on any app on macOS, 
 **Folders in finder**
 
 When you open a folder in Finder you'll see the name at the top of the window. If you hover over it, the folder icon will appear next to it, from there you can:
-  - If you click it you can drag it elsewhere
-  - If you secondary click it (two fingers) you'll see the path leading to it
+
+- If you click it you can drag it elsewhere
+- If you secondary click it (two fingers) you'll see the path leading to it
 
 <br/>
 
 <img src="/keyboard-icon.svg" width="20" height="20" style="display:inline;vertical-align:middle" alt="keyboard shortcut" /> **Files**
 
 Navigating files using the keyboard can be a bit unintuitive, mostly if you come from Windows (tell me how to open a file with your keyboard without looking ahead, I dare you!):
+
 - _Open a file_: `⌘ + ↓`
 - _Rename_: `enter`
 - _Preview_: `spacebar`
@@ -194,7 +203,8 @@ An _even better_ layout is `U.S. International without dead keys` which sadly do
 **Text Snippets:**
 
 If you have a phrase or text you repeat often, you can use expand a identifier of your choosing instead of writing it each time. For example, by default macOS auto-expands `omw` to `On my way!`. If you want to add your own, like for example:
-  - `@email` to `your personal` email
+
+- `@email` to `your personal` email
 
 Go to:
 
@@ -235,12 +245,14 @@ Log out of your session or restart, and after that keeping `⌘ + ^ + trackpad c
 [Karabiner](https://karabiner-elements.pqrs.org/) is like a swiss army knife to make your keyboard usable only for you and annoy everyone else that tries. but also its incredible for productivity and ergonomics. I have:
 
 - Simple modifications
+
   - `caps_lock -> escape`: because shift is already there and you rarely have to scream that much when typing.
   - `right_command -> right_control`: your right thumb is right there (get it?). Makes things like `^ + 1` easier and more ergonomic.
 
 - Complex modifications
 
 Very [VIM](https://www.vim.org/) oriented. I do recommend the first and second one if you changed the right command to right control in simple modifications. You can find them [here](https://ke-complex-modifications.pqrs.org)
+
 - `Use right_control+h/l to switch tabs in an application`
 - `Use right_control+j/k to switch windows of the foreground application`
 - `Change fn+hjkl to arrow keys`
@@ -273,6 +285,7 @@ If you ever tried to have something listen to port 5000 you've noticed that it's
 **zsh**
 
 A Unix shell with features baked in. I use [ohmyzsh](https://ohmyz.sh/) to install it and configure it and I advice you do too, at least for the color scheme. A few aliases and plugins I use:
+
 - Git aliases (edit your `~/.zshrc`):
   - `alias gcm='git checkout master || git checkout main'`
   - `alias gpc='git push origin $(current_branch)'`
