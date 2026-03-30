@@ -61,12 +61,6 @@ html {
   font-size: 16px;
 }
 
-@media screen and (min-width: 48rem) {
-  html {
-    font-size: 18px;
-  }
-}
-
 body {
   color: var(--body-color);
   background: var(--body-background-color);

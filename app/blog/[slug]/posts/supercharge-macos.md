@@ -42,8 +42,6 @@ Opening apps can be done in different ways, but the only correct one is using an
  - Clipboard History (Raycast): Have a list of your last copied text. If you go to `Settings -> Extensions -> Search for Clipboard History` you can set a Hotkey. I use `⌥ + ⌘ + v`. You can also disable it for certain apps.
  - Etc
 
-#### Change between apps
-
 <img src="/keyboard-icon.svg" width="20" height="20" style="display:inline;vertical-align:middle" alt="keyboard shortcut" /> **Change between apps**
 
 `⌘ + tab`. Keeping `⌘` pressed keeps the list open, you can then move right pressing `tab` or `right arrow` and left pressing `shift + tab` or arrow left . You can press `⌘ + q` to close applications from there instead of opening them.
@@ -55,8 +53,6 @@ Opening apps can be done in different ways, but the only correct one is using an
 
 `` ⌘ + ` ``, if you want to cycle in the opposite direction press ``⌘ + shift + ` ``
 - Similar to using App Exposé with the trackpad, by default swipping down with three fingers, but way faster
-
-#### Windows
 
 <img src="/laptop-icon.svg" width="20" height="20" style="display:inline;vertical-align:middle" alt="application" /> **Move and resize Windows**
 
@@ -106,8 +102,6 @@ By default, the Dock is visible at all times on the bottom of the screen, taking
 If you really want to use Mission Control, I find that grouping windows from the same app helps with the clutter. If you want a particular window from a group you can scroll it (two finger up on the trackpad) and pick from there. To activate it go to:
 
 `System Settings -> Desktop & Dock -> Scroll to the Mission Control section -> Group windows by application`
-
-#### Trackpad
 
 **Gestures**
 

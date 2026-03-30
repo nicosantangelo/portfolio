@@ -7,6 +7,7 @@
   margin: 6rem auto 1rem;
   max-width: 48rem;
   padding: 0.25rem 0.25rem 3rem;
+  font-size: 1.125em;
 }
 
 .markdown pre,
@@ -71,7 +72,6 @@
 }
 
 .markdown strong {
-  /*color: var(--markdown-strong-color);*/
   font-weight: 500;
 }
 
@@ -95,7 +95,7 @@
 
 @media screen and (max-width: 930px) {
   .markdown {
-    margin: 5rem 1.3rem 1rem;
+    margin: 5rem 0.5rem 1rem;
   }
 }
 
