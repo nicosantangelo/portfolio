@@ -13,7 +13,7 @@ posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
         <li>
           <div class="date">{post.data.date.toISOString().split('T')[0]}</div>
           <div class="name">
-            <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+            <a href={`/blog/${post.id}`}>{post.data.title}</a>
           </div>
         </li>
       ))}
